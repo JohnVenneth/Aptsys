@@ -76,10 +76,7 @@ Route::get('/timeout/{type}',[TimeoutController::class,'index']);
 Route::post('/timeinUser',[TimeinController::class,'store']);
 Route::post('/timeoutUser',[TimeoutController::class,'store']);
 
-Route::get('/poste', function () {
-    return view('poste.index');
-})->name('poste');
-
+Route::get('/', [LoginController::class, 'index']);
 
 /*
 Common Resource Routes
