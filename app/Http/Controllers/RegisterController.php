@@ -28,7 +28,6 @@ class RegisterController extends Controller
            'contact'=>'required|digits:11',
            'email'=>'required|email|max:255',
            'acctype'=>'required|boolean',
-           'shift'=>'required',
            'password'=>'required|confirmed',
         ]);
 
